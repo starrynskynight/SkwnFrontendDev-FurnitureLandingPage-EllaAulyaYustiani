@@ -19,14 +19,17 @@ Responsive landing page for a furniture brand built with **React**, **Tailwind C
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/dekoor-project.git
+   git clone https://github.com/starrynskynight/SkwnFrontendDev-FurnitureLandingPage-EllaAulyaYustiani.git
    cd dekoor-project
 
 2. **Install Dependencies**
-    ```npm install
+    ```bash
+    npm install
 
 3. **Start Development Server**
-    ```npm run dev
+    ```bash
+    npm run dev
     
 4. **Open in Browser**
-    ```http://localhost:5173
+    ```bash
+    http://localhost:5173
