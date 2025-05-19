@@ -12,13 +12,11 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white">
       <div className="max-w-8xl h-[64px] md:h-[140px] mx-auto px-4 py-3 flex items-center justify-between px-8">
         
-        {/* Left: Logo */}
         <div className="flex items-center gap-2 text-xl font-bold text-blue-600">
             <img src={LogoIcon} className="h-[32px] md:h-[48px]" alt="Logo Dekoor" />
             <img src={TextDekoor} className="h-[15px] w-[66px] md:h-[22px] md:w-[99px]" alt="Text Dekoor" />
         </div>
 
-        {/* Center: Menu (hidden on mobile) */}
         <ul className="hidden md:flex space-x-8 font-medium text-base text-black items-center">
           <li><a href="#" className="hover:text-[#553B33]">About Us</a></li>
           <li className="relative">
@@ -28,7 +26,6 @@ const Navbar = () => {
             >
               Furniture
             </button>
-            {/* Dropdown menu */}
             {dropdownOpen && (
               <ul className="absolute left-0 mt-2 bg-white shadow rounded w-40">
                 <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Tables</a></li>
@@ -41,7 +38,6 @@ const Navbar = () => {
           <li><a href="#" className="hover:text-[#553B33]">Contact</a></li>
         </ul>
 
-        {/* Right: Buttons (hidden on mobile) */}
         <div className="hidden md:flex items-center space-x-4">
           <button className="px-4 py-2 bg-[#E5F0B6] text-[#2F241F] rounded-lg h-[48px] w-[107px] hover:bg-[#949e67] text-sm">
             Sign Up
@@ -51,7 +47,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile: Hamburger toggle */}
         <div className="md:hidden flex items-center">
           <button 
             onClick={() => setMenuOpen(!menuOpen)} 
@@ -63,10 +58,8 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
-        <div className="fixed top-[140px] left-0 w-full z-50 bg-white px-4 pb-4 space-y-3 font-medium text-base text-black flex flex-col items-center shadow-md transition-all duration-300 ease-in-out
-">
+        <div className="fixed top-[140px] left-0 w-full z-50 bg-white px-4 pb-4 space-y-3 font-medium text-base text-black flex flex-col items-center shadow-md transition-all duration-300 ease-in-out">
           <a href="#" className="block">About Us</a>
           <div>
             <button

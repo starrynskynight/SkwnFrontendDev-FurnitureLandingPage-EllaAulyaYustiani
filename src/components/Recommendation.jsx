@@ -24,7 +24,6 @@ const FurnitureCategories = () => {
   return (
     <div className="flex flex-col md:flex-row items-start p-4 md:p-10">
 
-      {/* Images */}
       <div className="w-full md:w-3/5 flex items-center justify-center gap-4 order-2 md:order-1 pt-4">
         {activeCategory?.images?.map((src, index) => (
           <img
@@ -36,7 +35,6 @@ const FurnitureCategories = () => {
         ))}
       </div>
 
-      {/* Sidebar */}
       <div className="w-full md:w-2/5 order-1 md:order-2 md:mr-24">
         <p className="text-sm md:text-2xl text-[#2F241F] mb-4 text-center md:text-left">Categories</p>
         <h2 className="text-lg md:text-5xl font-bold text-gray-900 mb-6 text-center md:text-left">

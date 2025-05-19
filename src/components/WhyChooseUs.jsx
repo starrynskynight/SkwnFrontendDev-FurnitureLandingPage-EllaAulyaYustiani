@@ -9,7 +9,6 @@ const WhyChooseUs = () => {
       </h2>
 
       <div className="flex flex-col md:flex-row gap-6 md:gap-42">
-        {/* Item 1 */}
         <div className="flex items-center gap-3">
           <div className="bg-[#E5F0B680] p-2 h-[40px] w-[40px] rounded-lg flex items-center justify-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +27,6 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        {/* Item 2 */}
         <div className="flex items-center gap-3">
           <div className="bg-[#E5F0B680] p-2 h-[40px] w-[40px] rounded-lg text-2xl font-bold flex items-center justify-center">
             5
@@ -38,7 +36,6 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        {/* Item 3 */}
         <div className="flex items-center gap-3">
           <div className="bg-[#E5F0B680] p-2 h-[40px] w-[40px] rounded-lg flex items-center justify-center">
             <svg width="20" height="20" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">

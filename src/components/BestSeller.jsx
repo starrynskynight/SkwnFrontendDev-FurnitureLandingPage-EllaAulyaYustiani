@@ -1,4 +1,3 @@
-// src/components/BestSellerCarousel.jsx
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -18,7 +17,6 @@ export default function BestSellerCarousel() {
       .catch((err) => console.error('Failed to fetch products:', err));
   }, []);
 
-  // Re-initialize Swiper on window resize
   useEffect(() => {
     const handleResize = () => setSwiperKey((prev) => prev + 1);
     window.addEventListener('resize', handleResize);
@@ -44,7 +42,7 @@ export default function BestSellerCarousel() {
         modules={[Navigation]}
         spaceBetween={32}
         slidesPerView={2}
-        loop={products.length > 5} // aktifkan loop kalau cukup data
+        loop={products.length > 5} 
         speed={700}
         navigation={{
           nextEl: '.custom-next',
@@ -107,7 +105,6 @@ export default function BestSellerCarousel() {
         })}
       </Swiper>
 
-      {/* Desktop Buttons */}
       <div className="hidden md:flex absolute bottom-8 right-36 gap-10 z-10 text-5xl">
         <button className="custom-prev w-[56px] mh-[56px] rounded-full bg-[#E5F0B6] text-[#2e221c] flex items-center justify-center">
           &#x2039;
@@ -117,7 +114,6 @@ export default function BestSellerCarousel() {
         </button>
       </div>
 
-      {/* Mobile Buttons */}
       <div className="flex md:hidden absolute inset-y-1/2 left-0 right-0 px-2 justify-between z-10 text-4xl">
         <button className="custom-prev w-[48px] h-[48px] rounded-full bg-[#E5F0B6] text-[#2e221c] flex items-center justify-center">
           &#x2039;
